@@ -1,0 +1,40 @@
+{
+  "placeholderImages": [
+    {
+      "id": "book1",
+      "description": "Cover for Granada Trilogy",
+      "imageUrl": "https://picsum.photos/seed/book1/300/400",
+      "imageHint": "book cover"
+    },
+    {
+      "id": "book2",
+      "description": "Cover for The Muqaddimah",
+      "imageUrl": "https://picsum.photos/seed/book2/300/400",
+      "imageHint": "book history"
+    },
+    {
+      "id": "book3",
+      "description": "Cover for a science book",
+      "imageUrl": "https://picsum.photos/seed/book3/300/400",
+      "imageHint": "book science"
+    },
+    {
+      "id": "book4",
+      "description": "Cover for a self-help book",
+      "imageUrl": "https://picsum.photos/seed/book4/300/400",
+      "imageHint": "book self-help"
+    },
+    {
+      "id": "book5",
+      "description": "Cover for a literature book",
+      "imageUrl": "https://picsum.photos/seed/book5/300/400",
+      "imageHint": "book literature"
+    },
+    {
+      "id": "book6",
+      "description": "Cover for a book about space",
+      "imageUrl": "https://picsum.photos/seed/book6/300/400",
+      "imageHint": "book space"
+    }
+  ]
+}
