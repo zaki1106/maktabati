@@ -1,10 +1,19 @@
+
 "use client";
 import { Button } from '@/components/ui/button';
-import { User, LogOut, Settings } from 'lucide-react';
+import { User, LogOut, Settings, Linkedin, Briefcase } from 'lucide-react';
 import Link from 'next/link';
-import { BookOpen } from 'lucide-react';
+import { BookOpen, Info, Code, Database } from 'lucide-react';
 import { useAppContext } from '@/context/AppContext';
 import { usePathname } from 'next/navigation';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 
 export default function Header() {
@@ -45,10 +54,26 @@ export default function Header() {
       )}
 
       {!isAdminPage && (
-          <Button variant="ghost" size="icon" className="rounded-full">
-            <User className="h-5 w-5" />
-            <span className="sr-only">الملف الشخصي</span>
-          </Button>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" size="icon" className="rounded-full">
+                <User className="h-5 w-5" />
+                <span className="sr-only">الملف الشخصي</span>
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end">
+              <DropdownMenuLabel>About Me</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem className="cursor-default">
+                <Linkedin className="me-2 h-4 w-4" />
+                <span>houache zakaria</span>
+              </DropdownMenuItem>
+              <DropdownMenuItem className="cursor-default">
+                  <Briefcase className="me-2 h-4 w-4" />
+                  <span>zakaria-houache.vercal.app/</span>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
       )}
     </header>
   );
